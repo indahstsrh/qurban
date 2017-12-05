@@ -129,12 +129,9 @@ class Home extends CI_Controller
         'pembayaran_id' => $pembayaranid->pembayaran_id,
         'nama' => $this->input->post("nama1")
       );
-      $data['pequrban2'] = array(
-        'pembayaran_id' => $pembayaranid->pembayaran_id,
-        'nama' => $this->input->post("nama2")
-      );
+    
       $this->global_model->pequrban($data['pequrban1']);
-      $this->global_model->pequrban($data['pequrban2']);
+     
     } else {
       $data['pequrban1'] = array(
         'pembayaran_id' => $pembayaranid->pembayaran_id,
